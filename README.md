@@ -27,6 +27,10 @@ Sets a new value for a configuration value. The following configuration values a
 ## Building
 To build the binaries all you have to do is to issue the following command: `make`
 
+## Use with container
+Create docker image: `docker build . -t stiebel-eltron-apiserver`
+Run it `docker run --rm --env ISG_IP=<ISG IP address> --publish 5432:5432 stiebel-eltron-apiserver`
+
 ## Contributing
 Is there anything missing? Do you have ideas for new features or improvements? You are highly welcome to contribute your improvements to the project. All you have to do is to fork this repository, improve the code and issue a pull request.
 
