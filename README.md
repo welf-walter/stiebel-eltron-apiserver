@@ -29,6 +29,7 @@ To build the binaries all you have to do is to issue the following command: `mak
 
 ## Use with container
 Create docker image: `docker build . -t stiebel-eltron-apiserver`
+
 Run it `docker run --rm --env ISG_IP=<ISG IP address> --publish 5432:5432 stiebel-eltron-apiserver`
 
 ## Contributing
